@@ -4,9 +4,9 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'plugin:promise/recommended',
     './security/index.js',
     './import/index.js',
+    './promise/index.js',
     // Disable ESLint rules that conflicting with Prettier
     'prettier',
   ],
