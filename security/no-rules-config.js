@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['plugin:security/recommended'],
   env: {
     es6: true,
   },
