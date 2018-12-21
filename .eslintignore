@@ -1,0 +1,18 @@
+### nodeJS ###
+node_modules
+
+### Axway Appcelerator Titanium Mobile ###
+modules/
+Resources/
+build/
+plugins/
+# widgets/
+
+### Custom ###
+prototyping/
+tiapp.tpl
+tiapp-cfg.json
+.history/
+
+### Project specific ###
+app/lib/ui/icons.js

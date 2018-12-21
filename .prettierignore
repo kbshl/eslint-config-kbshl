@@ -1,0 +1,12 @@
+### Node ###
+node_modules
+**/package.json
+**/package-lock.json
+
+### Build ###
+dist
+coverage
+
+### VSCode ###
+.vscode
+.history
