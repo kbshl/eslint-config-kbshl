@@ -9,6 +9,7 @@
     "lint:markdown": "markdownlint --config .markdownlint.json README.md",
     "lint:commit": "commitlint -E HUSKY_GIT_PARAMS",
     "lint:check": "eslint --print-config . | eslint-config-prettier-check",
+    "prefix": "npm run format",
     "fix": "eslint --fix",
     "format": "prettier --write '**/*.js'",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
