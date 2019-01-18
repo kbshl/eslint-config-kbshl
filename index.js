@@ -42,5 +42,6 @@ module.exports = {
         },
       },
     ],
+    'no-useless-catch': 'error',
   },
 }

@@ -94,6 +94,8 @@ appropriate in all core linting configs:
   `require()` on the top-level module scope
 - [object-curly-newline](https://eslint.org/docs/rules/object-curly-newline) -
   Enforce consistent line breaks inside braces
+- [no-useless-catch](https://eslint.org/docs/rules/no-useless-catch#disallow-unnecessary-catch-clauses-no-useless-catch) -
+  Disallow unnecessary catch clauses
 
 ## License
 
