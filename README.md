@@ -64,10 +64,11 @@ or in combination with the base config (recommended):
 }
 ```
 
-- [titanium](./titanium/index.js) - Copied and extended from
+- [titanium](./mobile/titanium.js) - Copied and extended from
   [eslint-config-axway](https://github.com/appcelerator/eslint-config-axway/blob/master/env-titanium.js)
-- [alloy](./titanium/alloy.js) - Copied and extended from
+- [alloy](./mobile/alloy.js) - Copied and extended from
   [eslint-config-axway](https://github.com/appcelerator/eslint-config-axway/blob/master/env-alloy.js)
+- [mobile](./mobile/index.js) - A merge of the `titanium` and `alloy` configs
 
 ### Dependencies
 
@@ -90,9 +91,11 @@ appropriate in all core linting configs:
 - [no-use-before-define](https://eslint.org/docs/rules/no-use-before-define) -
   Disallow Early Use
 - [global-require](https://eslint.org/docs/rules/global-require) - Enforce
-  require() on the top-level module scope
+  `require()` on the top-level module scope
 - [object-curly-newline](https://eslint.org/docs/rules/object-curly-newline) -
   Enforce consistent line breaks inside braces
+- [no-useless-catch](https://eslint.org/docs/rules/no-useless-catch#disallow-unnecessary-catch-clauses-no-useless-catch) -
+  Disallow unnecessary catch clauses
 
 ## License
 
