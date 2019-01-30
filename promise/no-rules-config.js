@@ -1,11 +1,12 @@
 module.exports = {
-  extends: ['plugin:promise/recommended'],
   env: {
     es6: true,
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: ['promise'],
-}
+  rules: {},
+};
