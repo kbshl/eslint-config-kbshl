@@ -21,7 +21,5 @@ module.exports = {
     'Ti.UI': false,
     'module.exports': false,
   },
-  rules: {
-    'no-alert': 'off',
-  },
-}
+  rules: {},
+};

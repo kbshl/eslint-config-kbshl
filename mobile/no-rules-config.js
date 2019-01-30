@@ -1,12 +1,10 @@
 module.exports = {
   env: {
     es6: true,
+    browser: false,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2017,
     sourceType: 'module',
   },
-  settings: {
-    'import/external-module-folders': ['node_modules', 'modules'],
-  },
-}
+};

@@ -30,7 +30,15 @@ module.exports = {
     'import/core-modules': ['alloy'],
   },
   rules: {
-    'no-unused-vars': 0,
-    'alloy/no-unused-vars': 2,
+    'no-unused-vars': 'off',
+    'alloy/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^ignored',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+      },
+    ],
   },
-}
+};
