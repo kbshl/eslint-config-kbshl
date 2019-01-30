@@ -2,7 +2,7 @@ module.exports = {
   // prettier-ignore
   '**/*.+(js|ts|vue|json)': [
     'prettier --write',
-    'eslint',
+    'eslint --report-unused-disable-directives',
     'git add',
   ],
   '**/*.+(css|sass|less|graphql|yml|yaml|scss)': [
