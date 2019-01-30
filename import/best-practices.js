@@ -1,10 +1,11 @@
 module.exports = {
   extends: ['./no-rules-config.js'],
   rules: {
-    'import/first': 2,
-    'import/imports-first': 2,
+    'import/first': 'error',
+    'import/imports-first': 'error',
+    'import/no-absolute-path': 'error',
     'import/no-anonymous-default-export': [
-      0,
+      'off',
       {
         allowArray: false,
         allowArrowFunction: false,
@@ -14,17 +15,17 @@ module.exports = {
         allowObject: false,
       },
     ],
-    'import/no-absolute-path': 0,
-    'import/no-deprecated': 1,
-    'import/no-duplicates': 2,
+    'import/no-deprecated': 'warn',
+    'import/no-duplicates': 'error',
     'import/no-internal-modules': [
-      0,
+      'off',
       {
         allow: [],
       },
     ],
-    'import/no-mutable-exports': 2,
-    'import/no-restricted-paths': 0,
-    'import/no-unassigned-import': 0,
+    'import/no-mutable-exports': 'error',
+    'import/no-restricted-paths': 'off',
+    'import/no-unassigned-import': 'off',
+    'import/no-webpack-loader-syntax': 'error',
   },
-}
+};

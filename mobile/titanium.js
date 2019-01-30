@@ -21,5 +21,7 @@ module.exports = {
     'Ti.UI': false,
     'module.exports': false,
   },
-  rules: {},
+  rules: {
+    'import/no-absolute-path': 'off',
+  },
 };
