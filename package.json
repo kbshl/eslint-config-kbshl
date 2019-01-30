@@ -64,7 +64,7 @@
     "lint-staged": "8.1.1",
     "markdownlint-cli": "0.13.0",
     "prettier": "1.16.2",
-    "prettier-config-kbshl": "1.0.1",
+    "prettier-config-kbshl": "2.0.0",
     "safe-publish-latest": "1.1.2",
     "standard-version": "4.4.0"
   },
