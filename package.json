@@ -28,7 +28,6 @@
     "lint",
     "linter",
     "javascript",
-    "styleguide",
     "quality",
     "alloy",
     "titanium",
@@ -50,7 +49,6 @@
     "@commitlint/config-conventional": "^7.1.2",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.12.0",
-    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-find-rules": "^3.3.1",
     "eslint-plugin-alloy": "^1.1.1",
@@ -68,7 +66,6 @@
   },
   "peerDependencies": {
     "eslint": "^5.12.0",
-    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-alloy": "^1.1.1",
     "eslint-plugin-import": "^2.14.0",

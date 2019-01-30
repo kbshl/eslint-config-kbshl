@@ -3,7 +3,6 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'airbnb-base',
     './security/index.js',
     './import/index.js',
     './promise/index.js',
