@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/kbshl/eslint-config-kbshl/compare/v1.1.0...v2.0.0) (2019-01-31)
+
+
+### Features
+
+* remove airbnb-base config, use custom rules instead ([#2](https://github.com/kbshl/eslint-config-kbshl/issues/2)) ([b3c0b47](https://github.com/kbshl/eslint-config-kbshl/commit/b3c0b47))
+
+
+### BREAKING CHANGES
+
+* replaced `airbnb-base` dependency with custom rules does not comply with `airbnb-base` rules anymore; also disabled all stylistic rules
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/kbshl/eslint-config-kbshl/compare/v1.0.1...v1.1.0) (2019-01-18)
 
