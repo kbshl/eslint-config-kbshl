@@ -1,1 +1,1 @@
-module.exports = require('prettier-config-kbshl')
+module.exports = require('prettier-config-kbshl');
