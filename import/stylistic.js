@@ -9,6 +9,7 @@ module.exports = {
     'import/no-dynamic-require': 'off',
     'import/no-nodejs-modules': 'off',
     'import/no-named-default': 'error',
+    'import/no-named-export': 'warn',
     'import/no-namespace': 'off',
     'import/order': [
       'warn',
