@@ -41,3 +41,6 @@ dist
 
 ### intelliJ ###
 .idea
+
+### Custom Patterns ###
+__ignore__/*

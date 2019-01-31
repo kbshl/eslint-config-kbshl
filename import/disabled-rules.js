@@ -1,11 +1,16 @@
 module.exports = {
   extends: ['./no-rules-config.js'],
   rules: {
-    'import/max-dependencies': [0, { max: 10 }],
-    'import/unambiguous': 0,
-    'import/exports-last': 0,
-    'import/extensions': {
-      js: 0,
-    },
+    'import/exports-last': 'off',
+    'import/extensions': 'error',
+    'import/max-dependencies': [
+      'off',
+      {
+        max: 10,
+      },
+    ],
+    'import/no-default-export': 'off',
+    'import/no-relative-parent-imports': 'off',
+    'import/unambiguous': 'off',
   },
-}
+};

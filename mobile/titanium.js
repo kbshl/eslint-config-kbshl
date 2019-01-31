@@ -22,6 +22,6 @@ module.exports = {
     'module.exports': false,
   },
   rules: {
-    'no-alert': 'off',
+    'import/no-absolute-path': 'off',
   },
-}
+};

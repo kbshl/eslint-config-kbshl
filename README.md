@@ -8,7 +8,7 @@
 
 > [ESLint](https://eslint.org) >
 > [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html)
-> for my Javascript based projects (Web and Mobile)
+> for my Javascript based projects - Mobile and Web
 
 ## Installation
 
@@ -33,15 +33,29 @@ section of your
 }
 ```
 
+## Notes
+
+Please note that most of the stylistic rules are disabled cause I use
+[prettier](https://prettier.io/) to format my code. Therefore the
+[eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+is included.
+
 ## Provided configurations
 
-Following are the core configurations:
+The default config actually is composed of several configurations and you can
+use those individually. These are the configs it's using:
 
-- [airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-- [eslint-plugin-security/recommended](https://www.npmjs.com/package/eslint-plugin-security)
-- [eslint-plugin-promise/recommended](https://www.npmjs.com/package/eslint-plugin-promise)
+- [possible-errors.js](./possible-errors.js)
+- [best-practices.js](./best-practices.js)
+- [stylistic.js](./stylistic.js)
+- [es6](./es6/index.js)
 - [import](./import/index.js)
+- [promise](./promise/index.js)
 - [security](./security/index.js)
+
+You can use each of these configs yourself. Also, the `es6`, `import`,
+`promise`, `security` configs each have a `possible-errors.js`,
+`best-practices.js` (and `stylistic.js`) which they are composed of as well.
 
 ### Optional configurations
 
@@ -64,38 +78,34 @@ or in combination with the base config (recommended):
 }
 ```
 
+- [alloy](./mobile/alloy.js) - Copied and extended from
+  [eslint-config-axway](https://github.com/appcelerator/eslint-config-axway/blob/master/env-alloy.js),
+  the `titanium` config is merged into this one
+- [babel](./babel/index.js)
+- [flowtype](./flowtype.js)
+- [mobile](./mobile/index.js) - A merge of the `titanium` and `alloy` configs
 - [titanium](./mobile/titanium.js) - Copied and extended from
   [eslint-config-axway](https://github.com/appcelerator/eslint-config-axway/blob/master/env-titanium.js)
-- [alloy](./mobile/alloy.js) - Copied and extended from
-  [eslint-config-axway](https://github.com/appcelerator/eslint-config-axway/blob/master/env-alloy.js)
-- [mobile](./mobile/index.js) - A merge of the `titanium` and `alloy` configs
 
-### Dependencies
+### Things to know
 
+- All plugins needed for rules used by these configs are dependencies of this
+  module so you don't have to install anything on your own.
+- Almost all of the stylistic rules are disabled cause I use
+  [prettier](https://prettier.io/) to format my code. To ensure this the
+  [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+  is included too.
+
+### ESLint Dependencies
+
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
 - [eslint-plugin-alloy](https://www.npmjs.com/package/eslint-plugin-alloy)
+- [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel)
+- [eslint-plugin-flowtype](https://www.npmjs.com/package/eslint-plugin-flowtype)
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - [eslint-plugin-json](https://www.npmjs.com/package/eslint-plugin-json)
 - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 - [eslint-plugin-security](https://www.npmjs.com/package/eslint-plugin-security)
-
-## Provided Rules
-
-This configuration provides the following custom rules, which are included as
-appropriate in all core linting configs:
-
-- [padded-blocks](https://eslint.org/docs/rules/padded-blocks) - Require or
-  disallow padding within blocks
-- [brace-style](https://eslint.org/docs/rules/brace-style) - Require Brace Style
-- [no-multiple-empty-lines](https://eslint.org/docs/rules/no-multiple-empty-lines) -
-  Disallow multiple empty lines
-- [no-use-before-define](https://eslint.org/docs/rules/no-use-before-define) -
-  Disallow Early Use
-- [global-require](https://eslint.org/docs/rules/global-require) - Enforce
-  `require()` on the top-level module scope
-- [object-curly-newline](https://eslint.org/docs/rules/object-curly-newline) -
-  Enforce consistent line breaks inside braces
-- [no-useless-catch](https://eslint.org/docs/rules/no-useless-catch#disallow-unnecessary-catch-clauses-no-useless-catch) -
-  Disallow unnecessary catch clauses
 
 ## License
 

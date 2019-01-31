@@ -8,12 +8,17 @@ module.exports = {
     sourceType: 'module',
   },
   settings: {
-    'import/external-module-folders': ['node_modules'],
     'import/resolver': {
       node: {
         extensions: ['.js', '.json'],
       },
     },
-    'import/extensions': ['.js'],
+    'import/extensions': ['.js', '.mjs'],
+    'import/ignore': [
+      'node_modules',
+      '.json$',
+      '.(scss|less|css|styl|coffee|hbs|svg)$',
+    ],
+    'import/external-module-folders': ['node_modules', 'modules'],
   },
-}
+};

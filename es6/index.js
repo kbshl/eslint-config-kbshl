@@ -4,7 +4,7 @@ module.exports = {
     './stylistic.js',
     './best-practices.js',
     './possible-errors.js',
-    './disabled-rules.js',
+    'prettier',
   ],
   rules: {},
 };
