@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/kbshl/eslint-config-kbshl/compare/v2.0.0...v2.0.1) (2019-01-31)
+
+
+### Bug Fixes
+
+* add unused import rules and fix typo in babel config ([#3](https://github.com/kbshl/eslint-config-kbshl/issues/3)) ([0732b45](https://github.com/kbshl/eslint-config-kbshl/commit/0732b45))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/kbshl/eslint-config-kbshl/compare/v1.1.0...v2.0.0) (2019-01-31)
 
