@@ -24,6 +24,7 @@ module.exports = {
       },
     ],
     'import/no-mutable-exports': 'error',
+    'import/no-named-as-default-member': 'warn',
     'import/no-restricted-paths': 'off',
     'import/no-unassigned-import': 'off',
     'import/no-webpack-loader-syntax': 'error',
