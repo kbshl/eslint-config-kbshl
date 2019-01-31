@@ -1,4 +1,4 @@
-modules.exports = {
+module.exports = {
   extends: ['./no-rules-config.js'],
   rules: {
     // Deprecated
