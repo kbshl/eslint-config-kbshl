@@ -46,6 +46,7 @@
   "homepage": "https://github.com/kbshl/eslint-config-kbshl#readme",
   "dependencies": {
     "babel-eslint": "10.0.1",
+    "confusing-browser-globals": "1.0.5",
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-alloy": "1.1.1",
     "eslint-plugin-babel": "5.3.0",
